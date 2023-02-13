@@ -1,21 +1,31 @@
+import { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import GoUp from "./components/GoUp";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 
 function App() {
 
-  window.addEventListener("scroll", () => {
+  const [show, setShow] = useState(false)
 
-    console.log(window.scrollY)
+
+ window.addEventListener("scroll", () =>{
+    if(window.scrollY > 100){
+      setShow(true)
+    } else {
+      setShow(false)
+    }
   })
 
   return (
     <>
-      <Intro></Intro>
-      <About></About>
-      <Projects></Projects>
-      <Contact></Contact>
+      <Intro/>
+      <About/>
+      <Projects/>
+      <Contact/>
+      {show ? <GoUp/> : ""}
+
     
     </>
   );

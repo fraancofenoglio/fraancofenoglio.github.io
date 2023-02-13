@@ -506,6 +506,16 @@ textarea {
   font-weight: 500;
 }
 
+.go-up {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+}
+.go-up img {
+  width: 60px;
+  height: 60px;
+}
+
 @media only screen and (max-width: 800px) {
   .intro {
     flex-direction: column;
