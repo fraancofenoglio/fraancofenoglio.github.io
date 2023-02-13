@@ -13,7 +13,7 @@ const Contact = () => {
 
     window.addEventListener("scroll", () =>{
 
-        if(window.scrollY > 1485){
+        if(window.scrollY > 1590){
 
             setShowsection(true)
         } else {
