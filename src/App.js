@@ -3,6 +3,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import GoUp from "./components/GoUp";
 import Intro from "./components/Intro";
+import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Projects/>
       <Contact/>
       {show ? <GoUp/> : ""}
+      <Menu></Menu>
 
     
     </>
