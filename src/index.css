@@ -735,7 +735,7 @@ textarea {
   
   .project-resume {
     width: 45vw;
-    height: 22vh;
+    height: auto;
   }
   .project-resume h3{
     font-size: 25px;
