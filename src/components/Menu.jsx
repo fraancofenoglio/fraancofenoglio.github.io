@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 const Menu = () => {
 
   const [openMenu, setOpenmenu] = useState(false);
-  // const [animationContact, setAnimationContact] = useState()
-
 
   return (
 
@@ -12,48 +10,44 @@ const Menu = () => {
       <div onClick={() => {
         setOpenmenu(!openMenu)
       }} className='menu-button'>
-        <img src="./assets/menu-regular-72.png" alt="" />
+        <img src={!openMenu ? "./assets/menu-regular-72.png" : "./assets/x-regular-72.png"} alt="" />
       </div>
 
-      <div className='menu-container' style={openMenu ? {display: "flex"} : {display: "none"}}>
+      <div onClick={() => setOpenmenu(false)} className='menu-container' style={openMenu ? {display: "flex"} : {display: "none"}}>
 
         <div onClick={() => {
-            setOpenmenu(false)
+            setOpenmenu(false);
             window.scroll({
               top: 720,
               left: 0,
               behavior: "smooth"
-
-            })
-          }} className='about-button'>
+            });
+          }} className='about-button'
+          >
           <h3>Sobre Mí</h3>
 
         </div>
 
         <div onClick={() => {
+        setOpenmenu(false);
           window.scrollTo({
             top: 1500,
             left: 0,
             behavior: "smooth"
-
-          })
-            setOpenmenu(false)
+          });
           }} className="projects-button">
 
-            <h3>Proyectos</h3> 
-
-          
+          <h3>Proyectos</h3> 
 
         </div>
 
         <div onClick={() => {
-            setOpenmenu(false)
+            setOpenmenu(false);
             window.scroll({
               top: 2200,
               left: 0,
               behavior: "smooth"
-
-            })
+            });
           }} className="contact-button">
           <h3>Contacto</h3>
 
