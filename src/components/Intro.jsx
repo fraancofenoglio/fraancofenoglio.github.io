@@ -45,6 +45,7 @@ const Intro = () => {
         <div className="right-side">
             <div style={showname ? {opacity: "1"} : {opacity: "0"}} className="my-img">
             </div>
+            <a className="download-cv" href="./assets/CV-FrancoFenoglio2023.pdf" download="CV-FrancoFenoglio2023"> Descargar CV actualizado</a>
         </div>
 
     </section>
