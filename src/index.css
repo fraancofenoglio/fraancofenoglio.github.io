@@ -802,13 +802,19 @@ textarea {
 }
 
 
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 650px){
   .intro{
     height: auto;
   }
-  .left-side, .right-side {
+  .left-side, .right-side, .about, .social-wrapper {
     min-height: 500px;
+    height: auto;
   }
+  .projects {
+    height: auto;
+    min-height: 600px;
+  }
+  
 }
 /* keyframes */
 @keyframes fade {
