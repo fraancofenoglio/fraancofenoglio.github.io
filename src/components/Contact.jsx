@@ -10,7 +10,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
-
+    
     window.addEventListener("scroll", () =>{
 
         if(window.scrollY > 1590){
@@ -27,9 +27,7 @@ const Contact = () => {
                 setValue("Enviar")
             }, 4000);
         }
-      
     }, [value])
-    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,12 +40,11 @@ const Contact = () => {
         setEmail("");
         setSubject("");
         setMessage("");
-
     }
 
   return (
     <>
-    <section className="contact" style={!showsection ? {opacity: "0"} : {opacity: "1"}}>
+    <section id="contact" className="contact" style={!showsection ? {opacity: "0"} : {opacity: "1"}}>
         <h1 className="contact-title">Contacto</h1>
         <div className="social-wrapper">
             <div className="social">

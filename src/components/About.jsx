@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <>
-        <section className="about">
+        <section className="about" id="about">
 
             <h1 className={!showFirst ? "about-me-title" : "about-me-title show"}>Sobre mí</h1>
             <div className="about-me">

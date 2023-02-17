@@ -1,4 +1,4 @@
-import { useState } from "react"
+import {useState } from "react"
 import { projects } from "../utils.js"
 import Modal from "./Modal.jsx"
 const Projects = () => {
@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <>
-        <section className="projects" style={!showsection ? {opacity: "0"} : {opacity: "1"}}>
+        <section className="projects" id="projects" style={!showsection ? {opacity: "0"} : {opacity: "1"}}>
             <h1>Proyectos</h1>
 
             <div className="projects-list">
@@ -46,7 +46,6 @@ const Projects = () => {
                                 deploy: project.deploy
                             });
                             setType("project");
-
                         }}>
                             <h3>{project.title}</h3>
                             <img src={project.img} alt={project.title} />

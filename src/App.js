@@ -5,11 +5,10 @@ import GoUp from "./components/GoUp";
 import Intro from "./components/Intro";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
-
+import {BrowserRouter} from 'react-router-dom'
 function App() {
 
-  const [show, setShow] = useState(false)
-
+  const [show, setShow] = useState(false);
 
  window.addEventListener("scroll", () =>{
     if(window.scrollY > 100){
@@ -21,14 +20,15 @@ function App() {
 
   return (
     <>
-      <Intro/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      {show ? <GoUp/> : ""}
-      <Menu></Menu>
+      <BrowserRouter>
+        <Intro/>
+        <About/>
+        <Projects/>
+        <Contact/>
+        {show ? <GoUp/> : ""}
+        <Menu></Menu>
+      </BrowserRouter>
 
-    
     </>
   );
 }
