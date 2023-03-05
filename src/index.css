@@ -222,7 +222,7 @@ span{
 
 .projects {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,6 +246,7 @@ span{
   overflow: hidden;
   row-gap: 50px;
   width: 100vw;
+  height: auto;
 }
 
 .project {
@@ -547,7 +548,7 @@ textarea {
   color: #231123;
   background-color: #FFA400;
   margin-top: 2%;
-  padding: 1%;
+  padding: 1% 2%;
   height: auto;
   border-radius: 20px;
   font-weight: 500;
@@ -621,6 +622,8 @@ textarea {
   .project-resume {
     width: 45vw;
     height: auto;
+    min-height: 190px;
+    justify-content: space-between;
   }
   .project-resume h3{
     font-size: 25px;

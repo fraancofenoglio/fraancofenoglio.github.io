@@ -57,7 +57,32 @@ const projects = [
         technologies: "HTML y CSS",
         github: "https://github.com/fraancofenoglio/Strauss-Instruments",
         deploy: "https://strauss-instruments-ff.vercel.app/"
-    }
+    },
+    {
+        title: "Reloj Web",
+        description: "Se trata de un proyecto simple sobre un reloj web que tiene la posibilidad de elegir un tema.",
+        img: "./assets/relojweb.png",
+        technologies: "React, JavaScript",
+        github: "https://github.com/fraancofenoglio/reloj-web",
+        deploy: "https://reloj-web.vercel.app/"
+    },
+    {
+        title: "Calculadora Web",
+        description: "Se trata de una simple calculadora con operaciones básicas como suma, resta, multiplicación y división.",
+        img: "./assets/calculadora.png",
+        technologies: "React, JavaScript",
+        github: "https://github.com/fraancofenoglio/calculadora-basica",
+        deploy: "https://calculadora-ff.vercel.app/"
+    },
+    {
+        title: "Tiempify",
+        description: "Este proyecto es una app que muestra datos del tiempo actual como temperaturas máxima y mínima, nubosidad, presión, viento, etc. Consume la API de OpenWeatherMap",
+        img: "./assets/tiempify2.png",
+        technologies: "React, JavaScript",
+        github: "https://github.com/fraancofenoglio/Tiempify",
+        deploy: "https://tiempify.vercel.app/"
+    },
+
 ]
 
 export {IMG, projects}
