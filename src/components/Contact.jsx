@@ -32,14 +32,16 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_b2myntb", "template_7602ila", form.current, "7NqG_0L9oXGAZ--p5");
-
-        setValue("Enviado!");
-
-        setName("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
+        if (name !== "" && email !== "" && subject !== "" && message !== "") {
+            emailjs.sendForm("service_b2myntb", "template_7602ila", form.current, "7NqG_0L9oXGAZ--p5");
+            
+            setValue("Enviado!");
+            
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+        }
     }
 
   return (
