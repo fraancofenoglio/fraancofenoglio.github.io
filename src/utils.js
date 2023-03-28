@@ -75,12 +75,12 @@ const projects = [
         deploy: "https://calculadora-ff.vercel.app/"
     },
     {
-        title: "Tiempify",
+        title: "Tempify",
         description: "Este proyecto es una app que muestra datos del tiempo actual como temperaturas máxima y mínima, nubosidad, presión, viento, etc. Consume la API de OpenWeatherMap",
         img: "./assets/tiempify2.png",
         technologies: "React, JavaScript",
         github: "https://github.com/fraancofenoglio/Tiempify",
-        deploy: "https://tiempify.vercel.app/"
+        deploy: "https://tempify-ff.vercel.app/"
     },
 
 ]
