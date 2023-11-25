@@ -35,6 +35,14 @@ const IMG = [
 
 const projects = [
     {
+        title: "Agencia de Autos",
+        description: "Este proyecto está a la venta, es sobre una agencia de autos. Fácilmente adapatable a cualquier agencia. Tiene lado cliente y lado admin, el admin puede agregar/editar/eliminar vehículos. Trabaja con firebase como base de datos. El usuario puede buscar y/o filtrar vehículos, así como consultar a la agencia mediante email o WhatsApp.",
+        img: "./assets/agencia.png",
+        technologies: "React, React Router, Firebase, React Toastify, EmailJS",
+        github: "https://github.com/fraancofenoglio/autos-bragado",
+        deploy: "https://agencia-autos.vercel.app/"
+    },
+    {
         title: "Trineo Viajes",
         description: "Este proyecto es sobre un e-commerce viajes. Se utilizó React, combinado con React Router para el enrutamiento, Redux para el manejo del carrito de compras y la sesión de usuario. A su vez se utilizó Firebase para el registro/inicio de sesión y también una vez que se concreta la compra de un viaje, se genera una orden que contiene los datos de la compra realizada y puede ser visualizada desde el perfil del usuario.",
         img: "./assets/trineoviajes.png",
@@ -82,6 +90,7 @@ const projects = [
         github: "https://github.com/fraancofenoglio/Tiempify",
         deploy: "https://tempify-ff.vercel.app/"
     },
+
 
 ]
 
