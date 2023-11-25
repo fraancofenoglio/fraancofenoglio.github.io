@@ -275,7 +275,7 @@ span{
 
 .project-header h3 {
   color: #231123;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
 }
 
@@ -753,7 +753,6 @@ textarea {
     justify-content: space-around;
   }
   .project-description p{
-    padding: 0;
     font-size: 18px;
   }
   .certicate-wrapper {
